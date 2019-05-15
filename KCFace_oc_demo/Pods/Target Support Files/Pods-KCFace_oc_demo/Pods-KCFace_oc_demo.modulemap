@@ -1,0 +1,6 @@
+framework module Pods_KCFace_oc_demo {
+  umbrella header "Pods-KCFace_oc_demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
