@@ -1,16 +1,20 @@
 PODS:
+  - KCFace (1.0.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - KCFace (~> 1.0.0)
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - KCFace
     - SnapKit
 
 SPEC CHECKSUMS:
+  KCFace: fd1fc000aebac742f9314892260c9b82f8eedb5b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 3f912f9b2a9c6c1771cfd9d0df7e88f51cd9f695
+PODFILE CHECKSUM: 11c9b9750805df062e1598519e403cd9128162d1
 
 COCOAPODS: 1.7.0.rc.1
