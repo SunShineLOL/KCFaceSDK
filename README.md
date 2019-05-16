@@ -1,9 +1,9 @@
 
 
+
 ## 1 导入方式
 #### 1.1 手动导入
-**SDK最低支持版本iOS 9.0**
-下载[KCFaceSDK]([https://github.com/SunShineLOL/KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK)"ss" )
+**支持版本iOS 9.0 以上**
 
 ##### 将KCFaseSDK/文件中的KCFace.framework,KCFaceBundle.bundle,KCFace.swift 导入你的项目中
 ![导入framework.png](https://upload-images.jianshu.io/upload_images/4277317-384920b44da27001.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
