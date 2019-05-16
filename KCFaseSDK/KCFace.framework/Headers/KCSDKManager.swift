@@ -60,7 +60,7 @@ public class KCSDKManager: NSObject{
      *  异步更新微信免密代扣
      */
     ///更新微信免密代扣协议
-    @objc public func updateContractId(_ contractId : String?, complete:@escaping(_ isSuccess: Bool)->()){
+    @objc public func updateContractId(_ contractId : String?, complete:@escaping(_ isSuccess: Bool, _ desc: String?)->()){
         if let cID = contractId {
             self.contractId = cID
             KCApis.init().contractUpdate(cID, paramer:KCSDKManager.sharedInstances.getSDKInfo() , complete: complete)

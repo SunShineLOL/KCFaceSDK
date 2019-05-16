@@ -224,7 +224,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KCSDKManager
 + (KCSDKManager * _Nonnull)sharedInstances SWIFT_WARN_UNUSED_RESULT;
 - (void)configSDK:(NSString * _Nonnull)app :(NSString * _Nullable)cus :(NSString * _Nullable)sub :(NSString * _Nullable)contractId :(NSString * _Nonnull)platform :(NSString * _Nonnull)project;
 /// 更新微信免密代扣协议
-- (void)updateContractId:(NSString * _Nullable)contractId complete:(void (^ _Nonnull)(BOOL))complete;
+- (void)updateContractId:(NSString * _Nullable)contractId complete:(void (^ _Nonnull)(BOOL, NSString * _Nullable))complete;
 - (void)showKCFace:(UIViewController * _Nonnull)vc complete:(void (^ _Nullable)(BOOL, NSString * _Nonnull))complete;
 - (void)payRecords:(NSInteger)pageSize :(NSInteger)pageIndex complete:(void (^ _Nullable)(BOOL, NSDictionary<NSString *, id> * _Nullable))complete;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -513,7 +513,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) KCSDKManager
 + (KCSDKManager * _Nonnull)sharedInstances SWIFT_WARN_UNUSED_RESULT;
 - (void)configSDK:(NSString * _Nonnull)app :(NSString * _Nullable)cus :(NSString * _Nullable)sub :(NSString * _Nullable)contractId :(NSString * _Nonnull)platform :(NSString * _Nonnull)project;
 /// 更新微信免密代扣协议
-- (void)updateContractId:(NSString * _Nullable)contractId complete:(void (^ _Nonnull)(BOOL))complete;
+- (void)updateContractId:(NSString * _Nullable)contractId complete:(void (^ _Nonnull)(BOOL, NSString * _Nullable))complete;
 - (void)showKCFace:(UIViewController * _Nonnull)vc complete:(void (^ _Nullable)(BOOL, NSString * _Nonnull))complete;
 - (void)payRecords:(NSInteger)pageSize :(NSInteger)pageIndex complete:(void (^ _Nullable)(BOOL, NSDictionary<NSString *, id> * _Nullable))complete;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
