@@ -1,13 +1,11 @@
 
+
 ## 1 导入方式
 #### 1.1 手动导入
 **SDK最低支持版本iOS 9.0**
+下载[KCFaceSDK]([https://github.com/SunShineLOL/KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK)"ss" )
 
-**下载** [KCFaceSDK]([https://github.com/SunShineLOL/KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK) )
-
-**使用** [简书]([https://www.jianshu.com/p/b1806ccfd8bc](https://www.jianshu.com/p/b1806ccfd8bc))
-
-将KCFaseSDK/文件中的KCFace.framework,KCFaceBundle.bundle,KCFace.swift 导入你的项目中
+##### 将KCFaseSDK/文件中的KCFace.framework,KCFaceBundle.bundle,KCFace.swift 导入你的项目中
 ![导入framework.png](https://upload-images.jianshu.io/upload_images/4277317-384920b44da27001.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 在你需要使用SDK的地方导入
 ```
@@ -18,6 +16,11 @@ import KCFace
 use_frameworks! #注意如果pod中没有请添加use_frameworks!,如果被注释请取消注释
 pod 'KCFaceKit', '~> 1.0.0'
 ```
+#### 1.3 info.plist文件中添加相机隐私权限及描述
+```
+Privacy - Camera Usage Description App需要您的同意,才能访问相机，以便于识别你的面部信息
+```
+
 ## 2 用法
 - ### 2.1 Swift调用
 - 2.1.1 **[推荐]**快速调用
