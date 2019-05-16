@@ -6,5 +6,5 @@ target 'KCFace_oc_demo' do
   use_frameworks!
 
   # Pods for KCFace_oc_demo
-pod 'KCFace', '~> 1.0.0'
+pod 'KCFaceKit', '~> 1.0.0'
 end
