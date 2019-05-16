@@ -74,11 +74,11 @@
     KCSDKManager *manager = [KCSDKManager sharedInstances];
     manager.delegate = self;
     [manager configSDK:@"kechong" :@"2d08d3c1b7c14468ab14bf8aca454070" :@"" :@"" :@"kc" :@"kechong"];
-    [manager updateContractId:@"xxxxxx" complete:^(BOOL isSuss) {
+    [manager updateContractId:@"xxxxxx" complete:^(BOOL isSuss,NSString *desc) {
         if (isSuss) {
-            NSLog(@"成功");
+            NSLog(@"成功:%@",desc);
         }else{
-            NSLog(@"失败");
+            NSLog(@"失败%@",desc);
         }
     }];
     

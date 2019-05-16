@@ -34,7 +34,7 @@ public var delegate: KCSDKDelegate?{
  *  异步更新微信免密代扣
  */
 ///更新微信免密代扣协议
-public func updateContractId(_ contractId : String?, complete:@escaping(_ isSuccess: Bool)->()){
+public func updateContractId(_ contractId : String?, complete:@escaping(_ isSuccess: Bool,_ desc: String?)->()){
     KCSDKManager.sharedInstances.updateContractId(contractId, complete: complete)
 }
 

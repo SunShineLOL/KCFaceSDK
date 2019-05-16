@@ -156,13 +156,13 @@ class ViewController: UIViewController,KCSDKDelegate,UITextFieldDelegate {
             let contractId = "xxxxxxxx"
             KCFace.configSDK("kechong", "\(text)", "", "", "kc", "kechong")
             KCFace.delegate = self
-            KCFace.updateContractId(contractId, complete: { (bool) in
-                var title = "修改成功"
+            KCFace.updateContractId(contractId, complete: { (bool,desc) in
+                var title = "修改成功\(desc)"
                 if bool == true {
-                    print("修改成功")
+                    print("修改成功\(desc)")
                 }else{
-                    print("修改失败")
-                    title = "修改失败"
+                    print("修改失败\(desc)")
+                    title = "修改失败\(desc)"
                 }
                 let alert = UIAlertView(title: "微信免密签名", message: title, delegate: nil, cancelButtonTitle: "确定")
                 alert.show()
