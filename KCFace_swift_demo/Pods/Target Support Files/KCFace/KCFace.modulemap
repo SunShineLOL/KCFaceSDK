@@ -1,6 +1,0 @@
-framework module KCFace {
-  umbrella header "KCFace-umbrella.h"
-
-  export *
-  module * { export * }
-}

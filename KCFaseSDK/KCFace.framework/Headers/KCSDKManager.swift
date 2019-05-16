@@ -7,7 +7,11 @@
 //  1.0.5
 
 import Foundation
-
+/*
+ * 客户端实现该代理在面部管理页面当用户点击底部的通知时会提示用户开通微信免密
+ * 用户点击去开通时调用代理方法 kcAccreditWXPay 有客户端实现跳转等相关逻辑
+ * 当用户授权微信免密成功后返回客户端 调用 updateContractId 方法上传微信免密代扣协议id
+ */
 @objc public protocol KCSDKDelegate: NSObjectProtocol {
     ///由客户端实现微信免密相关逻辑
     @objc optional func kcAccreditWXPay()
@@ -16,12 +20,12 @@ import Foundation
 private let KCSDKManagerShareInstance = KCSDKManager()
 
 public class KCSDKManager: NSObject{
-    private var app: String?
-    private var cus: String?
-    private var sub: String?
-    private var contractId: String?
-    private var platform: String?
-    private var project: String?
+    public var app: String?
+    public var cus: String?
+    public var sub: String?
+    public var contractId: String?
+    public var platform: String?
+    public var project: String?
     @objc public weak var delegate: KCSDKDelegate?
     
    @objc public class var sharedInstances : KCSDKManager {
@@ -85,7 +89,7 @@ public class KCSDKManager: NSObject{
                         
                     }else{
                         if let de = desc {
-                            UIApplication.shared.keyWindow?.chrysan.showMessage(de, hideDelay: 1.5)
+                            UIApplication.shared.keyWindow?.chrysan.showPlainMessage(de, hideDelay: 1.5)
                         }
                         //未获取到用户数据跳转到记录页面
                         let kcvc = KCFaceViewController(isCheck: false)
@@ -131,6 +135,7 @@ public class KCSDKManager: NSObject{
      *  ***END***
      */
     @objc public func payRecords(_ pageSize: Int, _ pageIndex: Int, complete:((_ bool: Bool, _ res: [String : AnyObject]?) -> Void)? = nil ) {
+        
         var p = KCSDKManager.sharedInstances.getSDKInfo()
         p.updateValue(pageSize, forKey: "pageSize")
         p.updateValue(pageIndex, forKey: "pageIndex")
