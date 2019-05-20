@@ -1,6 +1,0 @@
-framework module KCFaceKit {
-  umbrella header "KCFaceKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
