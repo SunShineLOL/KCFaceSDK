@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 827767720d977e7a103c3ece02a33d1c9ee209d4
+PODS:
+  - KCFaceKit (0.1.0)
+
+DEPENDENCIES:
+  - KCFaceKit (~> 0.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KCFaceKit
+
+SPEC CHECKSUMS:
+  KCFaceKit: ac070b72c722b86ed3edf5b869a2afbcb47fc190
+
+PODFILE CHECKSUM: 8776d3917bf4b9e3a0d518e76ac97b07e0d872a7
 
 COCOAPODS: 1.7.0.rc.1

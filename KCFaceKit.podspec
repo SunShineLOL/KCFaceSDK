@@ -16,5 +16,5 @@ s.source_files = 'KCFaceSDK/*.swift'
 
 s.requires_arc = true
 s.platform = :ios, '9.0'
-s.swift_version = '5.0'
+s.swift_version = '4.0'
 end
