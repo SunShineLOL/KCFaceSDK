@@ -10,9 +10,9 @@ s.source   = { :git => "https://github.com/SunShineLOL/KCFaceSDK.git", :tag => "
 s.description = %{
 可充FaseSDK,为用户提供人脸录入,微信免密支付(需用户自行接入微信免密相关业务)
 }
-s.vendored_frameworks = 'KCFaseSDK/*.framework'
-s.resource  = 'KCFaseSDK/*.bundle'
-s.source_files = 'KCFaseSDK/*.swift'
+s.vendored_frameworks = 'KCFaceSDK/*.framework'
+s.resource  = 'KCFaceSDK/*.bundle'
+s.source_files = 'KCFaceSDK/*.swift'
 
 s.requires_arc = true
 s.platform = :ios, '9.0'

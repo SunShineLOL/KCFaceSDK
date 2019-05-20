@@ -181,12 +181,14 @@ class ViewController: UIViewController,KCSDKDelegate,UITextFieldDelegate {
 
 ///字典转json
 func kcGetJSONStringFromDictionary(dictionary:[String :Any]?) -> String {
-    if (!JSONSerialization.isValidJSONObject(dictionary!)) {
-        print("无法解析出JSONString")
-        return ""
+    if let dict = dictionary {
+        if (!JSONSerialization.isValidJSONObject(dict)) {
+            print("无法解析出JSONString")
+            return ""
+        }
+        let data : Data! = try? JSONSerialization.data(withJSONObject: dict, options: [])
+        let JSONString = String(data:data as Data,encoding: String.Encoding.utf8)
+        return JSONString! as String
     }
-    let data : Data! = try? JSONSerialization.data(withJSONObject: dictionary!, options: []) as Data?
-    let JSONString = String(data:data as Data,encoding: String.Encoding.utf8)
-    return JSONString! as String
-    
+    return ""
 }
