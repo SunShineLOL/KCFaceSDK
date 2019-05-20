@@ -13,7 +13,10 @@ Swift 5.0+**
 - #### 1.1 手动导入
 
 **[KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK )Swift5.x**
+
 **[KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK/tree/Swift4.x )Swift4.x**
+
+**[完整文档](https://www.jianshu.com/p/b1806ccfd8bc)**
 
 将KCFaceSDK/文件中的**KCFace.framework,KCFaceBundle.bundle,KCFace.swift**导入你的项目中
 
