@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name     = "KCFaceKit"
-s.version  = "1.0.0"
+s.version  = "0.1.0"
 s.license  = "MIT"
 s.summary  = "上海可充FaceKit"
 s.homepage = "https://github.com/SunShineLOL/CZNSDKTests"

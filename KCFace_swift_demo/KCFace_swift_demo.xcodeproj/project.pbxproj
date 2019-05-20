@@ -99,7 +99,6 @@
 				15824886228BFCF500998F27 /* Sources */,
 				15824887228BFCF500998F27 /* Frameworks */,
 				15824888228BFCF500998F27 /* Resources */,
-				1B867581E8C3F559467A16B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,23 +156,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B867581E8C3F559467A16B6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KCFace_swift_demo/Pods-KCFace_swift_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KCFace_swift_demo/Pods-KCFace_swift_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KCFace_swift_demo/Pods-KCFace_swift_demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7E1AD6545DBF6EAECE608647 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

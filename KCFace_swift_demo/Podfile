@@ -5,7 +5,7 @@ target 'KCFace_swift_demo' do
   
 use_frameworks!
 
-pod 'KCFaceKit', '~> 1.0.0'
-pod 'SnapKit'
+#pod 'KCFaceKit', '~> 1.0.0'
+#pod 'SnapKit'
 
 end
