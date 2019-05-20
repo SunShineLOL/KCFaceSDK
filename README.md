@@ -12,14 +12,15 @@ Swift 5.0+**
 
 - #### 1.1 手动导入
 
-下载[KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK )及演示demo
+**[KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK )Swift5.x**
+**[KCFaceSDK](https://github.com/SunShineLOL/KCFaceSDK/tree/Swift4.x )Swift4.x**
 
 将KCFaceSDK/文件中的**KCFace.framework,KCFaceBundle.bundle,KCFace.swift**导入你的项目中
 
 - #### 1.2 [推荐]pod方式导入
 ```
 use_frameworks! #注意如果pod中没有请添加use_frameworks!,如果被注释请取消注释
-pod 'KCFaceKit', '~> 1.0.0'
+pod 'KCFaceKit', '~> 1.0.0'#Swift4.x版本请使用1.0.0以下(不包含1.0.0版本)例:pod 'KCFaceKit'~>0.1.0'
 ```
 - #### 1.3 info.plist文件中添加相机隐私权限及描述
 ```
