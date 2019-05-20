@@ -3,10 +3,13 @@
 
 
 
-**环境:
-iOS 9.0+ / Mac OS X 10.14+
-Xcode 10.0+
-Swift 4.0+**
+**环境:**
+
+**iOS 9.0+ / Mac OS X 10.14+**
+
+**Xcode 10.0+**
+
+**Swift 4.0+**
 
 ## SDK导入
 
@@ -45,37 +48,37 @@ import KCFace
 KCFace.configSDK("kechong", "cus", "", "", "kc", "kechong")
 ///如果app需要SDK提示用户开通免密支付需设置代理对线并实现代理方法
 KCFace.delegate = self
-///启动SDK UI
+///启动SDK Ui
 KCFace.showKCFace(self) { (bool, desc) in
-if bool == true {
-print("sdk唤起成功!")
-}else{
-print("SDK唤起失败\(desc)")
-}
+    if bool == true {
+        print("sdk唤起成功!")
+    }else{
+        print("SDK唤起失败\(desc)")
+    }
 }
 ```
 ```
 ///修改添加微信免密签名id
 //在调用前请先确定 已经调用过configSDK()配置SDK参数
 KCFace.updateContractId("contractId") { (bool) in
-if bool == true {
-print("修改成功!")
-}else{
-print("修改失败")
-}
+    if bool == true {
+        print("修改成功!")
+    }else{
+        print("修改失败")
+    }
 }
 ```
 ```
 /*获取平台消费记录*/
 //在调用前请先确定 已经调用过configSDK()配置SDK参数 
 KCFace.payRecords(0, 0) { (bool, resp) in
-if bool == true {
-//成功
-print("成功!\(resp)")
-}else{
-//
-print("失败\(resp)")
-}
+    if bool == true {
+        //成功
+        print("成功!\(resp)")
+    }else{
+        //
+        print("失败\(resp)")
+    }
 }
 ```
 #### 或 **KCSDKManager** 
@@ -86,11 +89,11 @@ let manager = KCSDKManager.sharedInstances
 KCFace.delegate = self
 //启动SDK
 manager.showKCFace(self) { (bool, desc) in
-if bool == true {
-print("sdk唤起成功!")
-}else{
-print("SDK唤起失败\(desc)")
-}
+    if bool == true {
+        print("sdk唤起成功!")
+    }else{
+        print("SDK唤起失败\(desc)")
+    }
 }
 ```
 ## OC
@@ -100,11 +103,11 @@ KCSDKManager *manager = [KCSDKManager sharedInstances];
 manager.delegate = self;
 [manager configSDK:@"kechong" :@"cus" :@"" :@"" :@"kc" :@"kechong"];
 [manager showKCFace:self complete:^(BOOL isSuss, NSString * _Nonnull desc) {
-if (isSuss) {
-NSLog(@"成功:%@",desc);
-}else{
-NSLog(@"失败:%@",desc);
-}
+    if (isSuss) {
+        NSLog(@"成功:%@",desc);
+    }else{
+        NSLog(@"失败:%@",desc);
+    }
 }];
 ```
 ## Other
