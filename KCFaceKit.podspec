@@ -3,7 +3,7 @@ s.name     = "KCFaceKit"
 s.version  = "1.0.0"
 s.license  = "MIT"
 s.summary  = "上海可充FaceKit"
-s.homepage = "https://github.com/SunShineLOL/CZNSDKTests"
+s.homepage = "https://github.com/SunShineLOL/KCFaceSDK"
 s.author   = { "陈耍耍" => "443623074@qq.com" }
 s.social_media_url = "http://www.setpay.cn"
 s.source   = { :git => "https://github.com/SunShineLOL/KCFaceSDK.git", :tag => "#{s.version}" }

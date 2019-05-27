@@ -114,6 +114,7 @@
 				15824843228BFBC500998F27 /* Frameworks */,
 				15824844228BFBC500998F27 /* Resources */,
 				154E7CCE228D37FE00F81828 /* ShellScript */,
+				2B5BA8314599A59903ED3089 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +188,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\n";
+		};
+		2B5BA8314599A59903ED3089 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KCFace_oc_demo/Pods-KCFace_oc_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KCFace_oc_demo/Pods-KCFace_oc_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KCFace_oc_demo/Pods-KCFace_oc_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		76040EEC8304F9E1B3DA8722 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -1,0 +1,11 @@
+framework module KCFace {
+  umbrella header "KCFace.h"
+
+  export *
+  module * { export * }
+}
+
+module KCFace.Swift {
+    header "KCFace-Swift.h"
+    requires objc
+}
